@@ -1,7 +1,8 @@
 # hpgt-com
 
-Open-source tools and sites for paragliding and speedflying in the Harstad region, Northern Norway.
+Åpen kildekode for verktøy og nettsider for paragliding og speedflying rundt Harstad i Nord-Norge.
 
-- [flying-sites](https://github.com/hpgt-com/flying-sites): the flying sites guide
+- [flying-sites](https://github.com/hpgt-com/flying-sites): flystedsguiden
 
-Found a security issue? Do not open a public issue. Use «Report a vulnerability» under the repository's Security tab.
+Har du funnet et sikkerhetsproblem? Ikke opprett en offentlig sak. Bruk «Report a vulnerability» under fanen Security i
+repoet.
