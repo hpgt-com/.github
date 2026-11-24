@@ -1,19 +1,21 @@
-# Security
+# Sikkerhet
 
-This policy applies to every repository in this organisation that has no `SECURITY.md` of its own.
+Dette gjelder alle repoer i organisasjonen som ikke har sin egen `SECURITY.md`.
 
-## Reporting a security issue
+## Rapportere et sikkerhetsproblem
 
-Do not open a public issue. Use **Report a vulnerability** under the repository's **Security** tab, so only the
-maintainers see the report. Describe what you found, how to reproduce it and what it affects. We reply as soon as we
-can.
+Ikke opprett en offentlig issue. Bruk **Report a vulnerability** under fanen **Security** i repoet, så bare
+vedlikeholderne ser rapporten. Beskriv hva du fant, hvordan det kan gjenskapes, og hva det påvirker. Vi svarer så
+fort vi kan.
 
-## If a push is blocked because of a secret
+Rapporten kan skrives på norsk eller engelsk.
 
-Push protection stopped the push because a commit contains something that looks like a secret.
+## Hvis en push stoppes på grunn av en hemmelighet
 
-1. Do not bypass the block unless the value is a test value or a false positive.
-2. Remove the secret from the commit. If it is in the latest commit, edit the file and run
-   `git commit --amend`. If it is further back, use `git rebase -i` and edit the commit.
-3. If the secret was ever pushed or shared anywhere, treat it as leaked: revoke it and create a new one.
-4. Store the new secret in a GitHub environment limited to `main`, never in the code.
+Push protection stoppet pushen fordi en commit inneholder noe som ligner en hemmelighet.
+
+1. Ikke omgå blokkeringen, med mindre verdien er en testverdi eller et falskt treff.
+2. Fjern hemmeligheten fra commiten. Er den i den siste commiten, retter du filen og kjører `git commit --amend`. Er
+   den lenger bak, bruker du `git rebase -i` og retter den commiten.
+3. Har hemmeligheten vært pushet eller delt noe sted, regnes den som lekket: trekk den tilbake og lag en ny.
+4. Legg den nye hemmeligheten i et GitHub-miljø som bare tillater `main`, aldri i koden.
